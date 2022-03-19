@@ -38,10 +38,7 @@ import UrlStorageHelper from './storageHelper';
    */
   chrome.runtime.onMessage.addListener((request) => {
     if (request.type === 'POP_URL_CHANGED') {
-      UrlStorageHelper.get(url => {
-        document.getElementById('url').innerHTML = url;
-        drawCanvas(url);
-      });
+      populateUrl();
     }
   });
 
