@@ -3,21 +3,18 @@ Chrome extension to generate a QR code of the page URL I am viewing. This makes 
 
 ## Development
 
-To run the development environment, navigate to the project root and run:
+To run the development environment, navigate to the project root and use the provided makefile:
+```shell
+$ make run
+```
+
+If your machine does not have [Make](gnu.org/software/make/) use:
 
 ```shell
 $ npm run watch
 ```
 
 Then open your chrome browser and navigate to `chrome://extensions`, enable "Developer Mode" in the top-right, then click "Load Unpacked" in the top-left and open the `/build` folder of the project.
-
-## Production
-
-Build the project by running:
-
-```shell
-$ npm run build
-```
 
 ## Acknowledgements
 
