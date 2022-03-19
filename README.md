@@ -1,5 +1,5 @@
 # QuRL
-Chrome extension to make a QR code of the page URL I am viewing
+Chrome extension to generate a QR code of the page URL I am viewing. This makes it easy to swap a website you're viewing from your desktop or laptop to your phone.
 
 ## Development
 

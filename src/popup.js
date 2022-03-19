@@ -9,7 +9,7 @@ import UrlStorageHelper from './storageHelper';
     QRCode.toCanvas(
       canvas, 
       url, 
-      { errorCorrectionLevel: 'Q', scale: 6 }, 
+      { errorCorrectionLevel: 'Q' }, 
       err => err ? console.error(err) : null
     );
   }
