@@ -15,7 +15,6 @@ import UrlStorageHelper from './storageHelper';
   }
   
   function clearCanvas() {
-    console.log('clearing canvas')
     var canvas = document.getElementById('canvas');
     const context = canvas.getContext('2d');
     context.clearRect(0,0, canvas.clientWidth, canvas.height);
@@ -39,10 +38,7 @@ import UrlStorageHelper from './storageHelper';
    */
   chrome.runtime.onMessage.addListener((request) => {
     if (request.type === 'POP_URL_CHANGED') {
-      UrlStorageHelper.get(url => {
-        document.getElementById('url').innerHTML = url;
-        drawCanvas(url);
-      });
+      populateUrl();
     }
   });
 

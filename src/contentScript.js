@@ -43,7 +43,6 @@ var config = {
 
 function setup() {
   const url = window.location.href;
-  console.log('URL from setup: ' + url);
   sendUrl(url);
 }
 
